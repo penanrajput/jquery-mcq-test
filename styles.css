@@ -1,0 +1,77 @@
+
+*{
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+  user-select: none;
+}
+
+.question{
+  margin-left: 20px;
+}
+
+.selected{
+  background-color:yellow;
+}
+
+.correct {
+  background-color:greenyellow;
+}
+
+.wrong{
+  background-color: rgb(255, 213, 213);
+}
+
+
+
+.wrong:after{
+  /* content: "\f00c ";
+   */
+  content: "";
+  background: url(wrong.png) no-repeat right top;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.correct:after{
+  /* content: "\f00c "; */
+  content:"";
+  background: url(correct.png) no-repeat right top;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+li :hover{
+  background-color: #ddffff;
+  border-left: 6px solid #ccc;
+}
+
+/* .selected.correct:after
+{
+  content: "selected correct";
+  color: blue;
+  padding-left: 10px;
+  background-color:white;
+} */
+
+p{
+  font-weight: bold;
+   margin-left: -25px;
+}
+
+input{
+  cursor: not-allowed; /* aesthetics */
+  pointer-events: none;
+}
+
+h3
+{
+  margin-left: 20px;
+  color: blue;
+}
